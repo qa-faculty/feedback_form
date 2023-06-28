@@ -173,4 +173,15 @@ body {
     width: 100%;
     margin-left: 0;
   }
+  {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
 }
