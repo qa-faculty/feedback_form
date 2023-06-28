@@ -2,10 +2,10 @@ document.querySelector('form').addEventListener('submit', function(e) {
   e.preventDefault();
 
   // Получаем значения полей
-  const name = document.querySelector('input[placeholder="Ваше имя"]').value;
-  const email = document.querySelector('input[placeholder="Введите email"]').value;
-  const phone = document.querySelector('input[placeholder="Введите телефон"]').value;
-  const message = document.querySelector('textarea[placeholder="Сообщение"]').value;
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
 
   // Проверяем валидность полей
   if (!name || name.length < 2 || name.length > 30 || !/^[a-zA-Z- ]+$/.test(name)) {
