@@ -8,7 +8,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
   const message = document.getElementById('message').value;
 
   // Проверяем валидность полей
-  if (!name || name.length < 2 || name.length > 30 || !/^[a-zA-Z- ]+$/.test(name)) {
+  if (!name || name.length < 2 || name.length > 30 || !/^[а-яА-Я- ]+$/.test(name)) {
     alert('Некорректное имя. Длина имени от 2 до 30 символов. Допустимы только буквы, пробелы и дефисы.');
     return;
   }
