@@ -18,7 +18,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     return;
   }
 
-  if (!phone || !/^\d{7, 14}$/.test(phone)) {
+  if (!phone || !/^\d{7,14}$/.test(phone)) {
     alert('Некорректный номер телефона. Номер должен состоять из 10 цифр без пробелов или тире.');
     return;
   }
