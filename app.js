@@ -23,7 +23,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     return;
   }
 
-  if (!message || message.length < 10 || message.length > 500) {
+  if (!message || message.length < 10 || message.length > 50) {
     alert('Некорректное сообщение. Длина сообщения от 10 до 500 символов.');
     return;
   }
