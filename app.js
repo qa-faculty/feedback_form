@@ -13,7 +13,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     return;
   }
 
-  if (!email || !/@/.test(email) || !/\./.test(email)) {
+  if (!email || !/@/.test(email)) {
     alert('Некорректный email. Email должен содержать "@" и "."');
     return;
   }
