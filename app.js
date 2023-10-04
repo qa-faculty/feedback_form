@@ -9,22 +9,22 @@ document.querySelector('form').addEventListener('submit', function(e) {
 
   // Проверяем валидность полей
   if (!name || name.length < 2 || name.length > 30 || !/^[а-яА-Я- ]+$/.test(name)) {
-    alert('Некорректное имя. Длина имени от 2 до 30 символов. Допустимы только буквы, пробелы и дефисы.');
+    alert('Ошибка в поле Имя.');
     return;
   }
 
   if (!email || !/@/.test(email)) {
-    alert('Некорректный email. Email должен содержать "@" и "."');
+    alert('Ошибка в поле Email.');
     return;
   }
 
   if (!phone || !/^\d{7,14}$/.test(phone)) {
-    alert('Некорректный номер телефона. Номер должен состоять из 10 цифр без пробелов или тире.');
+    alert('Ошибка в поле Телефон.');
     return;
   }
 
   if (!message || message.length < 10 || message.length > 50) {
-    alert('Некорректное сообщение. Длина сообщения от 10 до 500 символов.');
+    alert('Ошибка в поле Сообщение');
     return;
   }
 
