@@ -13,7 +13,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     return;
   }
 
-  if (!email || !/@/.test(email)) {
+  if (!email || email.length < 5 || email.length > 30 || !/@/.test(email)) {
     alert('Ошибка в поле Email.');
     return;
   }
